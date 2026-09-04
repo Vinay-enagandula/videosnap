@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Clients</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+/* Header */
+
+header{
+    background:#0A66C2;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    flex-wrap:wrap;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(to right,#0A66C2,#004182);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+}
+
+.section-title{
+    text-align:center;
+    color:#0A66C2;
+    margin-bottom:40px;
+}
+
+/* Client Logos */
+
+.clients{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+    margin-bottom:60px;
+}
+
+.client-card{
+    background:#fff;
+    padding:30px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.client-card:hover{
+    transform:translateY(-8px);
+}
+
+.client-card img{
+    width:100px;
+    height:100px;
+    object-fit:contain;
+    margin-bottom:15px;
+}
+
+.client-card h3{
+    color:#0A66C2;
+}
+
+/* Testimonials */
+
+.testimonials{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.testimonial{
+    background:#fff;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.testimonial p{
+    color:#555;
+    line-height:1.7;
+    margin-bottom:15px;
+}
+
+.testimonial h4{
+    color:#0A66C2;
+}
+
+/* Statistics */
+
+.stats{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    margin:70px 0;
+}
+
+.stat{
+    text-align:center;
+    margin:20px;
+}
+
+.stat h2{
+    font-size:42px;
+    color:#0A66C2;
+}
+
+.stat p{
+    color:#666;
+}
+
+/* CTA */
+
+.cta{
+    background:#0A66C2;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+    border-radius:10px;
+}
+
+.cta h2{
+    margin-bottom:15px;
+}
+
+.cta p{
+    margin-bottom:25px;
+}
+
+.cta a{
+    display:inline-block;
+    text-decoration:none;
+    background:white;
+    color:#0A66C2;
+    padding:12px 30px;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+/* Footer */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:60px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:35px;
+}
+
+.stats{
+    flex-direction:column;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Company</div>
+
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Clients</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Our Trusted Clients</h1>
+
+<p>
+We are proud to work with startups, enterprises, educational institutions, and organizations worldwide.
+</p>
+
+</section>
+
+<div class="container">
+
+<h2 class="section-title">Our Clients</h2>
+
+<div class="clients">
+
+<div class="client-card">
+<img src="https://picsum.photos/100?random=1" alt="Client 1">
+<h3>Tech Solutions</h3>
+</div>
+
+<div class="client-card">
+<img src="https://picsum.photos/100?random=2" alt="Client 2">
+<h3>Global Corp</h3>
+</div>
+
+<div class="client-card">
+<img src="https://picsum.photos/100?random=3" alt="Client 3">
+<h3>InnovateX</h3>
+</div>
+
+<div class="client-card">
+<img src="https://picsum.photos/100?random=4" alt="Client 4">
+<h3>NextGen</h3>
+</div>
+
+<div class="client-card">
+<img src="https://picsum.photos/100?random=5" alt="Client 5">
+<h3>Bright Minds</h3>
+</div>
+
+<div class="client-card">
+<img src="https://picsum.photos/100?random=6" alt="Client 6">
+<h3>Future Tech</h3>
+</div>
+
+</div>
+
+<h2 class="section-title">What Our Clients Say</h2>
+
+<div class="testimonials">
+
+<div class="testimonial">
+<p>
+"The team delivered our project ahead of schedule with outstanding quality. Their support has been exceptional."
+</p>
+<h4>— Rahul Sharma, CEO</h4>
+</div>
+
+<div class="testimonial">
+<p>
+"We've worked together for over three years, and their professionalism and technical expertise continue to impress us."
+</p>
+<h4>— Priya Reddy, Project Manager</h4>
+</div>
+
+<div class="testimonial">
+<p>
+"Our website traffic and customer engagement increased significantly after implementing their solutions."
+</p>
+<h4>— Amit Verma, Marketing Head</h4>
+</div>
+
+</div>
+
+<div class="stats">
+
+<div class="stat">
+<h2>500+</h2>
+<p>Happy Clients</p>
+</div>
+
+<div class="stat">
+<h2>1200+</h2>
+<p>Projects Completed</p>
+</div>
+
+<div class="stat">
+<h2>98%</h2>
+<p>Client Satisfaction</p>
+</div>
+
+<div class="stat">
+<h2>15+</h2>
+<p>Years of Experience</p>
+</div>
+
+</div>
+
+<div class="cta">
+
+<h2>Become Our Next Success Story</h2>
+
+<p>
+Partner with us to build innovative, secure, and scalable solutions for your business.
+</p>
+
+<a href="#">Contact Us</a>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>&copy; 2026 Company Name. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>

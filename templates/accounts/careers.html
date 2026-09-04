@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - videosnap</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f5f5f5;
+            color:#333;
+        }
+
+        /* Navbar */
+        nav{
+            background:#2c3e50;
+            color:white;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:15px 50px;
+        }
+
+        nav h2{
+            color:white;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+        }
+
+        nav ul li{
+            margin-left:20px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        nav ul li a:hover{
+            color:#00c3ff;
+        }
+
+        /* Hero Section */
+        .hero{
+            background:#3498db;
+            color:white;
+            text-align:center;
+            padding:60px 20px;
+        }
+
+        .hero h1{
+            font-size:42px;
+            margin-bottom:15px;
+        }
+
+        .hero p{
+            font-size:18px;
+        }
+
+        .container{
+            width:90%;
+            max-width:1100px;
+            margin:40px auto;
+        }
+
+        section{
+            background:white;
+            padding:25px;
+            margin-bottom:25px;
+            border-radius:8px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+
+        section h2{
+            color:#2c3e50;
+            margin-bottom:20px;
+        }
+
+        /* Cards */
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            background:#ecf0f1;
+            padding:20px;
+            border-radius:8px;
+        }
+
+        .card h3{
+            margin-bottom:10px;
+            color:#2c3e50;
+        }
+
+        .card p{
+            margin-bottom:10px;
+        }
+
+        /* Benefits */
+        ul{
+            padding-left:20px;
+        }
+
+        ul li{
+            margin-bottom:10px;
+        }
+
+        /* Form */
+        form{
+            display:flex;
+            flex-direction:column;
+        }
+
+        input,
+        select,
+        textarea{
+            padding:12px;
+            margin:10px 0;
+            border:1px solid #ccc;
+            border-radius:5px;
+            font-size:16px;
+        }
+
+        textarea{
+            resize:vertical;
+            height:120px;
+        }
+
+        button{
+            background:#3498db;
+            color:white;
+            border:none;
+            padding:12px;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:16px;
+        }
+
+        button:hover{
+            background:#2980b9;
+        }
+
+        footer{
+            background:#2c3e50;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+
+<nav>
+    <h2>MyApp Careers</h2>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+
+<div class="hero">
+    <h1>Join Our Team</h1>
+    <p>Build your future with us. Explore exciting career opportunities.</p>
+</div>
+
+<div class="container">
+
+    <!-- About -->
+
+    <section>
+
+        <h2>Why Work With Us?</h2>
+
+        <p>
+            We believe in innovation, teamwork, continuous learning, and creating
+            products that make a difference. Join our growing team and build your career.
+        </p>
+
+    </section>
+
+    <!-- Job Openings -->
+
+    <section>
+
+        <h2>Current Openings</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Python Developer</h3>
+                <p><strong>Location:</strong> Hyderabad</p>
+                <p><strong>Experience:</strong> 0-2 Years</p>
+                <p><strong>Type:</strong> Full Time</p>
+            </div>
+
+            <div class="card">
+                <h3>Frontend Developer</h3>
+                <p><strong>Location:</strong> waranagl</p>
+                <p><strong>Experience:</strong> 0-3 Years</p>
+                <p><strong>Type:</strong> Full Time</p>
+            </div>
+
+            <div class="card">
+                <h3>UI/UX Designer</h3>
+                <p><strong>Location:</strong> chennai</p>
+                <p><strong>Experience:</strong> Freshers Welcome</p>
+                <p><strong>Type:</strong> Full Time</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Benefits -->
+
+    <section>
+
+        <h2>Employee Benefits</h2>
+
+        <ul>
+            <li>Competitive Salary</li>
+            <li>Health Insurance</li>
+            <li>Flexible Working Hours</li>
+            <li>Remote Work Opportunities</li>
+            <li>Paid Time Off</li>
+            <li>Learning & Development Programs</li>
+            <li>Career Growth Opportunities</li>
+        </ul>
+
+    </section>
+
+    <!-- Application Form -->
+
+    <section>
+
+        <h2>Apply Now</h2>
+
+        <form>
+
+            <input type="text"
+                   placeholder="Full Name"
+                   required>
+
+            <input type="email"
+                   placeholder="Email Address"
+                   required>
+
+            <input type="tel"
+                   placeholder="Phone Number"
+                   required>
+
+            <select required>
+                <option value="">Select Position</option>
+                <option>Python  Developer</option>
+                <option>Frontend Developer</option>
+                <option>UI/UX Designer</option>
+            </select>
+
+            <input type="file">
+
+            <textarea
+                placeholder="Tell us about yourself..."
+                required></textarea>
+
+            <button type="submit">
+                Submit Application
+            </button>
+
+        </form>
+
+    </section>
+
+</div>
+
+<!-- Footer -->
+
+<footer>
+
+    <p>&copy; 2026 videosnap. All Rights Reserved.</p>
+
+    <p>Email: careers@videosnap.com | Phone: +91 98765 43210</p>
+
+</footer>
+
+</body>
+</html>

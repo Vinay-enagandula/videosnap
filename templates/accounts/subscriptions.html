@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Plans</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f6f9;
+        }
+
+        header{
+            background:#0d6efd;
+            color:white;
+            text-align:center;
+            padding:25px;
+        }
+
+        .container{
+            width:90%;
+            max-width:1200px;
+            margin:50px auto;
+        }
+
+        .plans{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            flex-wrap:wrap;
+        }
+
+        .plan-card{
+            background:white;
+            width:320px;
+            border-radius:12px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+            text-align:center;
+            padding:30px;
+            transition:0.3s;
+        }
+
+        .plan-card:hover{
+            transform:translateY(-8px);
+        }
+
+        .popular{
+            border:3px solid #0d6efd;
+            position:relative;
+        }
+
+        .badge{
+            position:absolute;
+            top:-15px;
+            left:50%;
+            transform:translateX(-50%);
+            background:#0d6efd;
+            color:white;
+            padding:6px 18px;
+            border-radius:20px;
+            font-size:14px;
+            font-weight:bold;
+        }
+
+        h2{
+            margin-bottom:15px;
+            color:#333;
+        }
+
+        .price{
+            font-size:40px;
+            color:#0d6efd;
+            margin:15px 0;
+        }
+
+        .price span{
+            font-size:18px;
+            color:#666;
+        }
+
+        ul{
+            list-style:none;
+            margin:25px 0;
+            text-align:left;
+        }
+
+        ul li{
+            padding:10px 0;
+            border-bottom:1px solid #eee;
+        }
+
+        .btn{
+            display:inline-block;
+            text-decoration:none;
+            background:#0d6efd;
+            color:white;
+            padding:12px 25px;
+            border-radius:6px;
+            transition:0.3s;
+            font-weight:bold;
+        }
+
+        .btn:hover{
+            background:#084dbf;
+        }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            background:#222;
+            color:white;
+            margin-top:50px;
+        }
+
+        @media(max-width:900px){
+            .plans{
+                flex-direction:column;
+                align-items:center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Choose Your Subscription Plan</h1>
+    <p>Find the perfect plan for your needs.</p>
+</header>
+
+<div class="container">
+
+    <div class="plans">
+
+        <!-- Basic Plan -->
+        <div class="plan-card">
+
+            <h2>Basic</h2>
+
+            <div class="price">
+                ₹299 <span>/month</span>
+            </div>
+
+            <ul>
+                <li>✔ Access to Basic Features</li>
+                <li>✔ 5 GB Storage</li>
+                <li>✔ Email Support</li>
+                <li>✔ Community Access</li>
+                <li>✖ Premium Reports</li>
+            </ul>
+
+            <a href="#" class="btn">Choose Plan</a>
+
+        </div>
+
+        <!-- Pro Plan -->
+        <div class="plan-card popular">
+
+            <div class="badge">
+                Most Popular
+            </div>
+
+            <h2>Pro</h2>
+
+            <div class="price">
+                ₹799 <span>/month</span>
+            </div>
+
+            <ul>
+                <li>✔ Everything in Basic</li>
+                <li>✔ 100 GB Storage</li>
+                <li>✔ Priority Support</li>
+                <li>✔ Analytics Dashboard</li>
+                <li>✔ API Access</li>
+            </ul>
+
+            <a href="#" class="btn">Choose Plan</a>
+
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div class="plan-card">
+
+            <h2>Enterprise</h2>
+
+            <div class="price">
+                ₹1999 <span>/month</span>
+            </div>
+
+            <ul>
+                <li>✔ Unlimited Storage</li>
+                <li>✔ Dedicated Account Manager</li>
+                <li>✔ 24/7 Support</li>
+                <li>✔ Advanced Security</li>
+                <li>✔ Custom Integrations</li>
+            </ul>
+
+            <a href="#" class="btn">Contact Sales</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2026 Your Company. All Rights Reserved.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Documentation</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:#0A66C2;
+    color:#fff;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero{
+    background:linear-gradient(to right,#0A66C2,#004182);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.search-box{
+    max-width:500px;
+    margin:auto;
+}
+
+.search-box input{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+}
+
+.section-title{
+    text-align:center;
+    color:#0A66C2;
+    margin-bottom:40px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#0A66C2;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#666;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#0A66C2;
+    color:white;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:5px;
+}
+
+.code-box{
+    background:#1e1e1e;
+    color:#fff;
+    padding:25px;
+    border-radius:10px;
+    overflow:auto;
+    margin-top:50px;
+}
+
+pre{
+    white-space:pre-wrap;
+}
+
+.faq{
+    margin-top:60px;
+}
+
+.faq-item{
+    background:white;
+    margin-bottom:20px;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.faq-item h3{
+    color:#0A66C2;
+    margin-bottom:10px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:60px;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:34px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">Docs</div>
+
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Documentation</a></li>
+<li><a href="#">API</a></li>
+<li><a href="#">Support</a></li>
+</ul>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Documentation Center</h1>
+
+<p>Find guides, tutorials, API references, and code examples.</p>
+
+<div class="search-box">
+<input type="text" placeholder="Search documentation...">
+</div>
+
+</section>
+
+<div class="container">
+
+<h2 class="section-title">Documentation Categories</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Getting Started</h3>
+<p>Learn how to install, configure, and use the platform.</p>
+<a href="#" class="btn">Read Guide</a>
+</div>
+
+<div class="card">
+<h3>API Reference</h3>
+<p>Complete REST API documentation with request and response examples.</p>
+<a href="#" class="btn">View API</a>
+</div>
+
+<div class="card">
+<h3>User Guide</h3>
+<p>Step-by-step tutorials for end users and administrators.</p>
+<a href="#" class="btn">Open Guide</a>
+</div>
+
+<div class="card">
+<h3>Authentication</h3>
+<p>Learn about login, tokens, sessions, and user authentication.</p>
+<a href="#" class="btn">Learn More</a>
+</div>
+
+<div class="card">
+<h3>Database</h3>
+<p>Database models, migrations, and schema documentation.</p>
+<a href="#" class="btn">Explore</a>
+</div>
+
+<div class="card">
+<h3>Deployment</h3>
+<p>Deploy your application on production servers.</p>
+<a href="#" class="btn">Deploy</a>
+</div>
+
+</div>
+
+<h2 class="section-title">Sample Code</h2>
+
+<div class="code-box">
+
+<pre>
+# Python Example
+
+def welcome(name):
+    return f"Welcome {name}"
+
+print(welcome("Vinay"))
+</pre>
+
+</div>
+
+<div class="faq">
+
+<h2 class="section-title">Frequently Asked Questions</h2>
+
+<div class="faq-item">
+<h3>How do I create an account?</h3>
+<p>Click the Sign Up button and complete the registration form.</p>
+</div>
+
+<div class="faq-item">
+<h3>How can I reset my password?</h3>
+<p>Go to the Forgot Password page and follow the instructions.</p>
+</div>
+
+<div class="faq-item">
+<h3>Where can I find API documentation?</h3>
+<p>The API Reference section contains complete endpoint documentation.</p>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>&copy; 2026 Documentation Center. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>

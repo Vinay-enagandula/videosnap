@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Header */
+header{
+    background:#0d6efd;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    font-size:38px;
+}
+
+header p{
+    margin-top:10px;
+}
+
+/* Search Bar */
+.search-box{
+    width:90%;
+    max-width:500px;
+    margin:30px auto;
+    display:flex;
+}
+
+.search-box input{
+    flex:1;
+    padding:12px;
+    font-size:16px;
+    border:2px solid #0d6efd;
+    border-right:none;
+    outline:none;
+}
+
+.search-box button{
+    padding:12px 20px;
+    background:#0d6efd;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+}
+
+.search-box button:hover{
+    background:#084dbd;
+}
+
+/* Products */
+.container{
+    width:90%;
+    margin:auto;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-bottom:50px;
+}
+
+.card{
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-body{
+    padding:20px;
+}
+
+.card-body h3{
+    margin-bottom:10px;
+}
+
+.price{
+    color:#0d6efd;
+    font-size:22px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.rating{
+    color:#f39c12;
+    margin-bottom:15px;
+}
+
+.description{
+    color:#555;
+    margin-bottom:15px;
+    line-height:1.5;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#0d6efd;
+    color:white;
+    padding:10px 20px;
+    border-radius:5px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#084dbd;
+}
+
+/* Footer */
+footer{
+    background:#222;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Our Products</h1>
+    <p>Discover our latest collection of premium products.</p>
+</header>
+
+<div class="search-box">
+    <input type="text" placeholder="Search products...">
+    <button>Search</button>
+</div>
+
+<div class="container">
+
+<div class="products">
+
+    <!-- Product 1 -->
+    <div class="card">
+        <img src="https://via.placeholder.com/300x220?text=Laptop" alt="Laptop">
+        <div class="card-body">
+            <h3>Laptop</h3>
+            <div class="price">₹59,999</div>
+            <div class="rating">★★★★★</div>
+            <p class="description">
+                High-performance laptop with Intel Core i7 processor and 16GB RAM.
+            </p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="card">
+        <img src="https://via.placeholder.com/300x220?text=Smartphone" alt="Phone">
+        <div class="card-body">
+            <h3>Smartphone</h3>
+            <div class="price">₹24,999</div>
+            <div class="rating">★★★★☆</div>
+            <p class="description">
+                Latest smartphone with AMOLED display and 5G connectivity.
+            </p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="card">
+        <img src="https://via.placeholder.com/300x220?text=Headphones" alt="Headphones">
+        <div class="card-body">
+            <h3>Wireless Headphones</h3>
+            <div class="price">₹4,999</div>
+            <div class="rating">★★★★★</div>
+            <p class="description">
+                Noise-cancelling wireless headphones with crystal-clear sound.
+            </p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="card">
+        <img src="https://via.placeholder.com/300x220?text=Smartwatch" alt="Watch">
+        <div class="card-body">
+            <h3>Smart Watch</h3>
+            <div class="price">₹8,999</div>
+            <div class="rating">★★★★☆</div>
+            <p class="description">
+                Fitness tracking, heart rate monitoring, and GPS support.
+            </p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="card">
+        <img src="https://via.placeholder.com/300x220?text=Camera" alt="Camera">
+        <div class="card-body">
+            <h3>DSLR Camera</h3>
+            <div class="price">₹49,999</div>
+            <div class="rating">★★★★★</div>
+            <p class="description">
+                Professional DSLR camera with 24MP sensor and 4K recording.
+            </p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="card">
+        <img src="https://via.placeholder.com/300x220?text=Speaker" alt="Speaker">
+        <div class="card-body">
+            <h3>Bluetooth Speaker</h3>
+            <div class="price">₹2,999</div>
+            <div class="rating">★★★★☆</div>
+            <p class="description">
+                Portable Bluetooth speaker with powerful bass and 12-hour battery.
+            </p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Your Company. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

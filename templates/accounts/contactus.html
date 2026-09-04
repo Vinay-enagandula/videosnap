@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+        .container{
+            width:90%;
+            max-width:1000px;
+            margin:40px auto;
+            display:flex;
+            background:#fff;
+            border-radius:10px;
+            box-shadow:0 0 15px rgba(0,0,0,0.2);
+            overflow:hidden;
+        }
+
+        .left{
+            width:40%;
+            background:#007bff;
+            color:white;
+            padding:40px;
+        }
+
+        .left h2{
+            margin-bottom:20px;
+        }
+
+        .left p{
+            margin:15px 0;
+            line-height:1.6;
+        }
+
+        .right{
+            width:60%;
+            padding:40px;
+        }
+
+        .right h2{
+            margin-bottom:20px;
+            color:#333;
+        }
+
+        form{
+            display:flex;
+            flex-direction:column;
+        }
+
+        input, textarea{
+            padding:12px;
+            margin-bottom:15px;
+            border:1px solid #ccc;
+            border-radius:5px;
+            font-size:16px;
+        }
+
+        textarea{
+            resize:none;
+        }
+
+        button{
+            padding:12px;
+            background:#007bff;
+            color:white;
+            border:none;
+            border-radius:5px;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#0056b3;
+        }
+
+        @media(max-width:768px){
+
+            .container{
+                flex-direction:column;
+            }
+
+            .left,.right{
+                width:100%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="left">
+
+        <h2>Contact Information</h2>
+
+        <p><strong>📍 Address:</strong><br>
+        123 Main Street,<br>
+        Hyderabad, Telangana</p>
+
+        <p><strong>📞 Phone:</strong><br>
+        +91 9876543210</p>
+
+        <p><strong>✉ Email:</strong><br>
+        support@example.com</p>
+
+        <p><strong>🌐 Website:</strong><br>
+        www.example.com</p>
+
+    </div>
+
+    <div class="right">
+
+        <h2>Contact Us</h2>
+
+        <form method="POST">
+
+            <!-- Required for Django -->
+            {% csrf_token %}
+
+            <input type="text"
+                   name="name"
+                   placeholder="Enter your name"
+                   required>
+
+            <input type="email"
+                   name="email"
+                   placeholder="Enter your email"
+                   required>
+
+            <input type="tel"
+                   name="phone"
+                   placeholder="Enter your phone number">
+
+            <input type="text"
+                   name="subject"
+                   placeholder="Subject"
+                   required>
+
+            <textarea name="message"
+                      rows="6"
+                      placeholder="Write your message..."
+                      required></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>

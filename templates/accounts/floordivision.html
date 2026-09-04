@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>floordivision</title>
+<!DOCTYPE html>
+</head>
+<body>
+
+    <h2>floordivision of a and b</h2>
+
+    {% if messages %}
+        {% for message in messages %}
+            <p>{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <div>
+            <label>a_value</label><br>
+            <input type="text" name="a_value" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label>b_value</label><br>
+            <input type="text" name="b_value" required>
+        </div>
+
+        <br>
+
+        <button type="submit">floordivision</button>
+    </form>
+
+    
+       <p>{{ a_value }}</p>
+        <p>{{ b_value }}</p>
+        <p>{{ c_value }}</p>
+
+       
+   
+</body>
+</html>

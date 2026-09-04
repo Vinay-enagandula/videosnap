@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:#0A66C2;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+.hero{
+    background:#0A66C2;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+}
+
+.blogs{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h2{
+    margin-bottom:10px;
+}
+
+.card-content p{
+    color:#666;
+    line-height:1.6;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 18px;
+    background:#0A66C2;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.sidebar{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    height:fit-content;
+}
+
+.sidebar h2{
+    margin-bottom:15px;
+    color:#0A66C2;
+}
+
+.sidebar input{
+    width:100%;
+    padding:10px;
+    margin-bottom:20px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    padding:10px 0;
+    border-bottom:1px solid #ddd;
+}
+
+.newsletter{
+    background:white;
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+    text-align:center;
+    padding:50px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.newsletter input{
+    width:60%;
+    padding:12px;
+    margin-top:20px;
+}
+
+.newsletter button{
+    padding:12px 20px;
+    background:#0A66C2;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:900px){
+
+.container{
+grid-template-columns:1fr;
+}
+
+header{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:15px;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+.newsletter input{
+width:100%;
+margin-bottom:15px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">MyBlog</div>
+
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Categories</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Welcome to Our Blog</h1>
+
+<p>Latest news, tutorials, technology updates, and inspiring stories.</p>
+
+</section>
+
+<div class="container">
+
+<div class="blogs">
+
+<div class="card">
+
+<img src="https://picsum.photos/600/400?random=1">
+
+<div class="card-content">
+
+<h2>Learning HTML & CSS</h2>
+
+<p>
+HTML and CSS are the foundation of web development. Learn how to create beautiful websites from scratch.
+</p>
+
+<a href="#" class="btn">Read More</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://picsum.photos/600/400?random=2">
+
+<div class="card-content">
+
+<h2>JavaScript Basics</h2>
+
+<p>
+Discover how JavaScript makes websites interactive and improves user experience.
+</p>
+
+<a href="#" class="btn">Read More</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://picsum.photos/600/400?random=3">
+
+<div class="card-content">
+
+<h2>Python Programming</h2>
+
+<p>
+Python is one of the most popular programming languages used for AI, web development, and automation.
+</p>
+
+<a href="#" class="btn">Read More</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://picsum.photos/600/400?random=4">
+
+<div class="card-content">
+
+<h2>Django Web Framework</h2>
+
+<p>
+Build secure and scalable web applications using Django and Python.
+</p>
+
+<a href="#" class="btn">Read More</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="sidebar">
+
+<h2>Search</h2>
+
+<input type="text" placeholder="Search blogs">
+
+<h2>Categories</h2>
+
+<ul>
+
+<li>HTML</li>
+
+<li>CSS</li>
+
+<li>JavaScript</li>
+
+<li>Python</li>
+
+<li>Django</li>
+
+<li>React</li>
+
+<li>Career Tips</li>
+
+</ul>
+
+<h2 style="margin-top:30px;">Recent Posts</h2>
+
+<ul>
+
+<li>Introduction to HTML5</li>
+
+<li>Top CSS Tricks</li>
+
+<li>JavaScript ES6 Features</li>
+
+<li>Python Interview Questions</li>
+
+<li>Django Project Ideas</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<section class="newsletter">
+
+<h2>Subscribe to Our Newsletter</h2>
+
+<p>Get the latest articles directly in your inbox.</p>
+
+<input type="email" placeholder="Enter your email">
+
+<button>Subscribe</button>
+
+</section>
+
+<footer>
+
+<p>&copy; 2026 MyBlog. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>

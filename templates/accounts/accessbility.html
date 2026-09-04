@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Accessibility Example</title>
+</head>
+<body>
+
+    <!-- Skip Navigation Link -->
+    <a href="#main-content">Skip to Main Content</a>
+
+    <!-- Header -->
+    <header>
+        <h1>Accessibility Demo Website</h1>
+
+        <!-- Navigation -->
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>This page demonstrates HTML accessibility features.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+
+            <!-- Image with alt text -->
+            <img src="service.jpg"
+                 alt="Students learning web development in a classroom"
+                 width="300">
+
+            <p>We provide HTML, CSS, JavaScript, Python, and Django training.</p>
+        </section>
+
+        <!-- Accessible Form -->
+        <section>
+
+            <h2>Registration Form</h2>
+
+            <form>
+
+                <label for="name">Full Name</label><br>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    aria-required="true"><br><br>
+
+                <label for="email">Email Address</label><br>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    aria-required="true"><br><br>
+
+                <label for="course">Choose Course</label><br>
+
+                <select id="course" name="course">
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JavaScript</option>
+                    <option>Python</option>
+                    <option>Django</option>
+                </select>
+
+                <br><br>
+
+                <button type="submit">
+                    Register
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- Accessible Table -->
+        <section>
+
+            <h2>Course Schedule</h2>
+
+            <table border="1">
+
+                <caption>Weekly Training Schedule</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Course</th>
+                        <th scope="col">Day</th>
+                        <th scope="col">Time</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Monday</td>
+                        <td>10:00 AM</td>
+                    </tr>
+
+                    <tr>
+                        <td>CSS</td>
+                        <td>Tuesday</td>
+                        <td>11:00 AM</td>
+                    </tr>
+
+                    <tr>
+                        <td>Django</td>
+                        <td>Friday</td>
+                        <td>2:00 PM</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2026 Accessibility Demo</p>
+    </footer>
+
+</body>
+</html>
